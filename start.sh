@@ -1,1 +1,1 @@
-docker container run -d --name wlsadmin --hostname wlsadmin -p 7001:7001 --env-file ./container-scripts/domain.properties -e ADMIN_PASSWORD=Weblogic.01 -v /vagrant/user_projects:/u01/oracle/user_projects perkael/1213-devel
+docker container run -d --name wlsadmin --hostname wlsadmin -p 7001:7001 -p 8453:8453 --env-file ./container-scripts/domain.properties -e ADMIN_PASSWORD=Weblogic.01 -v ./user_projects:/u01/oracle/user_projects perkael/1213-devel
